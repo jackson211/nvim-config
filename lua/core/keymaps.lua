@@ -1,10 +1,10 @@
-vim.g.mapleader = ';'
+vim.g.mapleader = ','
 
 -- keymaps
 vim.keymap.set('i', '<C-s>', '<esc>')
 -- f: file tree
 vim.keymap.set('n', '<F3>', ':NvimTreeToggle<cr>')
-vim.keymap.set('n', '<leader>ft', ':NvimTreeToggle<cr>')
+vim.keymap.set('n', '<leader>nn', ':NvimTreeToggle<cr>')
 vim.keymap.set('n', '<leader>ff', ':NvimTreeFocus<cr>')
 -- y: telescope
 vim.keymap.set('n', '<F9>', function() require'telescope.builtin'.find_files{} end)
@@ -20,10 +20,10 @@ vim.keymap.set('n', '<leader>cq', ':q<cr>')
 vim.keymap.set('n', '<leader>cQ', ':q!<cr>')
 vim.keymap.set('n', '<leader>cx', ':x<cr>')
 -- w: window
-vim.keymap.set('n', '<leader>wh', '<c-w>h')
-vim.keymap.set('n', '<leader>wj', '<c-w>j')
-vim.keymap.set('n', '<leader>wk', '<c-w>k')
-vim.keymap.set('n', '<leader>wl', '<c-w>l')
+vim.keymap.set('n', '<c-h>', '<c-w>h')
+vim.keymap.set('n', '<c-j>', '<c-w>j')
+vim.keymap.set('n', '<c-k>', '<c-w>k')
+vim.keymap.set('n', '<c-l>', '<c-w>l')
 vim.keymap.set('n', '<leader>w1', '<c-w>o')
 vim.keymap.set('n', '<leader>wx', ':x<cr>')
 vim.keymap.set('n', '<leader>w2', ':sp<cr>')
